@@ -59,24 +59,6 @@ img{display:block;max-width:100%}
 .doc a{color:var(--blue)}
 .doc strong{color:var(--white);font-weight:600}
 
-/* placeholder highlight — every one of these must be replaced */
-.fill{
-  background:#ffd76e;color:#26200a;font-weight:600;
-  padding:1px 8px;border-radius:5px;font-size:.93em;white-space:nowrap;
-}
-
-/* delete this whole block once the policy is filled in */
-.editme{
-  border:1px solid #ffd76e;border-radius:14px;padding:22px 24px;
-  background:rgba(255,215,110,.09);margin:0 0 44px;
-}
-.editme h2{
-  border:0;padding:0;margin:0 0 10px;color:#ffd76e;
-  font-family:var(--display);font-size:1.05rem;letter-spacing:0;
-}
-.editme p, .editme li{color:#e8dcbb;font-size:14.6px}
-.editme ul{margin:10px 0 0;padding-left:20px}
-
 .site-foot{border-top:1px solid var(--line);padding:34px 0 54px}
 .foot-inner{width:100%;max-width:1120px;margin:0 auto;padding:0 24px;
   display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
@@ -99,20 +81,24 @@ img{display:block;max-width:100%}
 <main class="doc">
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: <span>21 Aug 2026</span> · Applies to the LifeSpace Android application.</p>
+    <p class="updated">Last updated: 22 Aug 2026 · Applies to the LifeSpace Android application.</p>
 
     <p>This policy explains what LifeSpace ("the app", "we") does with your information.
       LifeSpace is published by Shankar Ghule, based in India.
       If anything here is unclear, write to
-      <a href="mailto:lifespaceapp2026@gmail.com"><span>lifespaceapp2026@gmail.com</span></a>.</p>
+      <a href="mailto:lifespaceapp2026@gmail.com">lifespaceapp2026@gmail.com</a>.</p>
 
     <h2>1. What stays on your device</h2>
     <p>The content you create in LifeSpace — journal entries, scanned documents, photos,
       videos, audio, tasks, tags and spaces — is stored locally on your device.
       We do not upload it to our servers, and we cannot read it.</p>
+    <p>Android's own backup feature may copy app data to your personal Google Drive if you
+      have device backup switched on. That copy is held in your Google account under Google's
+      terms, not ours, and we have no access to it. You can turn device backup off in Android
+      settings.</p>
     <p>Because this content is held on your device, uninstalling the app or clearing its
-      data removes it permanently. Keep your own backups or enable auto backup of anything you can't afford to lose.</p>
-   
+      data removes it permanently from the device. Keep your own copies of anything you
+      can't afford to lose.</p>
 
     <h2>2. Permissions the app asks for</h2>
     <ul>
@@ -139,49 +125,74 @@ img{display:block;max-width:100%}
     <h3>Subscriptions</h3>
     <p>Paid subscriptions are processed by Google Play and managed through RevenueCat.
       We never see or store your card details. Google Play shares a purchase token with us so
-      the app knows whether your subscription is active.</p>
+      the app knows whether your subscription is active. RevenueCat receives that token along
+      with an anonymous identifier it generates for your installation, so the app can check
+      your subscription status across reinstalls.</p>
 
     <h2>4. Third parties we share data with</h2>
     <p>We do not sell your personal information. Data is shared only with the service
       providers needed to run the app:</p>
     <ul>
-      <li><span>AppLovin MAX</span> — advertising delivery and measurement</li>
-      <li><strong>Google Play</strong> — payment processing for subscriptions</li>
+      <li><strong>AppLovin MAX</strong> — advertising delivery and measurement
+        (<a href="https://www.applovin.com/privacy/" rel="noopener">privacy policy</a>)</li>
+      <li><strong>RevenueCat</strong> — subscription status management
+        (<a href="https://www.revenuecat.com/privacy/" rel="noopener">privacy policy</a>)</li>
+      <li><strong>Google Play</strong> — payment processing for subscriptions
+        (<a href="https://policies.google.com/privacy" rel="noopener">privacy policy</a>)</li>
     </ul>
-    <p>Each provider handles data under its own privacy policy.
+    <p>Each provider handles data under its own privacy policy.</p>
 
-    <h2>5. Children</h2>
+    <h2>5. Consent for personalised ads</h2>
+    <p>If you are in the European Economic Area, the United Kingdom or Switzerland, LifeSpace
+      asks for your consent before any advertising partner collects data for personalised
+      advertising. The prompt appears when you first open the app, and you can choose to
+      decline. Declining does not limit any feature — you will still see ads, but they will
+      not be personalised.</p>
+    <p>You can change your choice at any time from the privacy option in the app's settings,
+      or reset your advertising ID in Android settings as described above.</p>
+
+    <h2>6. How long data is kept</h2>
+    <p>Content you create stays on your device until you delete it or uninstall the app; we
+      hold no copy and therefore keep it for no period at all. Advertising and subscription
+      data are retained by the providers listed above under their own retention schedules.
+      Email you send us is kept only as long as needed to answer your question.</p>
+
+    <h2>7. Children</h2>
     <p>LifeSpace is not directed to children under 13, and we do not knowingly collect
       personal information from them. If you believe a child has provided us with personal
       information, contact us and we will delete it.</p>
 
-    <h2>6. Security</h2>
+    <h2>8. Security</h2>
     <p>The app can be locked with a PIN or biometric unlock, which you enable in settings.
-      Your content is protected by your device's own storage protections. No system is
-      perfectly secure, so keep your device locked and its software up to date.</p>
+      Your content is protected by your device's own storage protections. Data exchanged with
+      the providers named above travels over encrypted connections. No system is perfectly
+      secure, so keep your device locked and its software up to date.</p>
 
-    <h2>7. Your choices and rights</h2>
+    <h2>9. Your choices and rights</h2>
     <ul>
       <li><strong>Delete your content</strong> — remove individual entries in the app, or uninstall
         it to remove everything stored locally.</li>
+      <li><strong>Change your ad consent</strong> — from the privacy option in the app's settings.</li>
       <li><strong>Reset your advertising ID</strong> — in Android settings, as described above.</li>
       <li><strong>Withdraw permissions</strong> — in Android settings, at any time.</li>
       <li><strong>Ask us a question about your data</strong> — write to the address below and we will
         respond within 30 days.</li>
     </ul>
     <p>If you are in the EEA or UK, you have rights of access, correction, deletion,
-      restriction and portability under the GDPR. If you are in India, you have comparable
-      rights under the Digital Personal Data Protection Act, 2023. Use the contact address
-      below to exercise them.</p>
+      restriction and portability under the GDPR. We rely on your consent for personalised
+      advertising, and on performance of a contract for processing your subscription. You may
+      withdraw consent at any time without affecting processing carried out before you did so.
+      If you are in India, you have comparable rights under the Digital Personal Data
+      Protection Act, 2023. Use the contact address below to exercise them.</p>
 
-    <h2>8. Changes to this policy</h2>
+    <h2>10. Changes to this policy</h2>
     <p>We will update this page when the app's data practices change, and revise the date at
       the top. Significant changes will be announced in the app before they take effect.</p>
 
-    <h2>9. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Shankar Ghule<br>
-      <span>pune, maharashtra, India</span><br>
-      <a href="mailto:lifespaceapp2026@gmail.com"><span>lifespaceapp2026@gmail.com</span></a></p>
+      Pune, Maharashtra, India<br>
+      <a href="mailto:lifespaceapp2026@gmail.com">lifespaceapp2026@gmail.com</a></p>
 
   </div>
 </main>
