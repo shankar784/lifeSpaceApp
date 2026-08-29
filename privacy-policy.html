@@ -38,8 +38,10 @@ img{display:block;max-width:100%}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit}
 .brand img{width:30px;height:30px;border-radius:8px}
 .brand span{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:-.02em}
+.head-links{display:flex;align-items:center;gap:22px}
 .back-link{color:var(--muted);text-decoration:none;font-size:14.5px;font-weight:500}
 .back-link:hover{color:var(--white)}
+.back-link[aria-current="page"]{color:var(--white)}
 
 .doc{padding:64px 0 96px}
 .doc h1{
@@ -63,6 +65,7 @@ img{display:block;max-width:100%}
 .foot-inner{width:100%;max-width:1120px;margin:0 auto;padding:0 24px;
   display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .foot-inner p{color:var(--muted);font-size:13.6px;margin:0}
+.foot-inner nav{display:flex;gap:18px}
 .foot-inner a{color:var(--muted);text-decoration:none;font-size:13.6px}
 .foot-inner a:hover{color:var(--white)}
 
@@ -74,7 +77,10 @@ img{display:block;max-width:100%}
 <header class="site-head">
   <div class="head-row">
     <a class="brand" href="./"><img src="assets/icon-192.png" alt=""><span>LifeSpace</span></a>
-    <a class="back-link" href="./">← Back to site</a>
+    <div class="head-links">
+      <a class="back-link" href="terms.html">Terms of Service</a>
+      <a class="back-link" href="./">← Back to site</a>
+    </div>
   </div>
 </header>
 
@@ -86,7 +92,8 @@ img{display:block;max-width:100%}
     <p>This policy explains what LifeSpace ("the app", "we") does with your information.
       LifeSpace is published by Shankar Ghule, based in India.
       If anything here is unclear, write to
-      <a href="mailto:lifespaceapp2026@gmail.com">lifespaceapp2026@gmail.com</a>.</p>
+      <a href="mailto:lifespaceapp2026@gmail.com">lifespaceapp2026@gmail.com</a>.
+      These terms work alongside our <a href="terms.html">Terms of Service</a>.</p>
 
     <h2>1. What stays on your device</h2>
     <p>The content you create in LifeSpace — journal entries, scanned documents, photos,
@@ -200,7 +207,10 @@ img{display:block;max-width:100%}
 <footer class="site-foot">
   <div class="foot-inner">
     <p>© 2026 Life Space App.</p>
-    <a href="./">Back to site</a>
+    <nav>
+      <a href="terms.html">Terms of Service</a>
+      <a href="./">Back to site</a>
+    </nav>
   </div>
 </footer>
 
