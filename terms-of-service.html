@@ -1,0 +1,641 @@
+<title>LifeSpace Terms of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500;600;700&display=swap">
+
+<style>
+  /* Committed to a single light treatment on purpose: this page is served
+     next to privacy-policy.html on the same site, and two legal pages that
+     disagree about their ground look like two different sites. Every colour
+     is painted explicitly so the page holds on any host background. */
+  :root {
+    --ground: #ffffff;
+    --panel: #faf9fc;
+    --ink: #191820;
+    --muted: #5b5766;
+    --rule: #e8e5ef;
+    --accent: #6a3de8;
+    --accent-soft: #f1ecfe;
+    --warn-ground: #fdf6ec;
+    --warn-rule: #e8c98d;
+    --warn-ink: #6b4a12;
+
+    --measure: 68ch;
+    --step-0: 1.0625rem;
+    --step-1: 1.1875rem;
+    --step-2: 1.5rem;
+    --step-3: 2.25rem;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: Lato, "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: var(--step-0);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  /* ── Masthead ─────────────────────────────────────────────────────────── */
+  header.masthead {
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 48px;
+    padding: 32px 0 28px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .brand img {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .brand .name {
+    font-family: Poppins, "Segoe UI", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .brand a {
+    margin-left: auto;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  .brand a:hover { color: var(--accent); text-decoration: underline; }
+
+  h1 {
+    font-family: Poppins, "Segoe UI", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: var(--step-3);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0 0 14px;
+  }
+
+  .dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    color: var(--muted);
+    font-size: 0.9375rem;
+    margin: 0;
+  }
+
+  .lede {
+    margin: 24px 0 0;
+    font-size: var(--step-1);
+    color: var(--ink);
+  }
+
+  /* ── Contents ─────────────────────────────────────────────────────────── */
+  nav.toc {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin-bottom: 52px;
+  }
+
+  nav.toc h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.4em;
+    columns: 2;
+    column-gap: 32px;
+    font-size: 0.9375rem;
+    line-height: 1.9;
+  }
+
+  nav.toc li::marker { color: var(--muted); font-variant-numeric: tabular-nums; }
+  nav.toc a { color: var(--ink); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  @media (max-width: 620px) {
+    nav.toc ol { columns: 1; }
+  }
+
+  /* ── Sections ─────────────────────────────────────────────────────────── */
+  section { margin-bottom: 44px; scroll-margin-top: 24px; }
+
+  h2.rule {
+    font-family: Poppins, sans-serif;
+    font-size: var(--step-2);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    text-wrap: balance;
+    margin: 0 0 14px;
+    padding-top: 8px;
+    border-top: 2px solid var(--ink);
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+  }
+
+  h2.rule .num {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    flex: none;
+  }
+
+  h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 28px 0 8px;
+  }
+
+  p { margin: 0 0 16px; }
+  p:last-child, ul:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 16px; padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--muted); }
+
+  strong { font-weight: 700; }
+
+  a { color: var(--accent); }
+  a:focus-visible,
+  nav.toc a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ── Callout ──────────────────────────────────────────────────────────── */
+  .callout {
+    background: var(--warn-ground);
+    border: 1px solid var(--warn-rule);
+    border-left-width: 4px;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 0 0 16px;
+    color: var(--warn-ink);
+  }
+
+  .callout .label {
+    font-family: Poppins, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .callout p { margin-bottom: 0; }
+
+  /* ── Footer ───────────────────────────────────────────────────────────── */
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 64px;
+    padding-top: 28px;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  footer .contact {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 20px 24px;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+
+  footer .contact p { margin-bottom: 6px; }
+  footer .contact p:last-child { margin-bottom: 0; }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="brand">
+      <img src="icon-192.png" alt="">
+      <span class="name">LifeSpace</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+
+    <h1>Terms of Service</h1>
+    <p class="dates">
+      <span>Effective 29 August 2026</span>
+      <span>Applies to the LifeSpace Android application</span>
+    </p>
+
+    <p class="lede">
+      LifeSpace is a private diary and journal. These terms explain what you can
+      expect from the app, what we ask of you, and — most importantly — how your
+      encrypted entries work, because that part cannot be undone if it goes
+      wrong.
+    </p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#accept">Accepting these terms</a></li>
+      <li><a href="#who">Who may use LifeSpace</a></li>
+      <li><a href="#account">Accounts and sign-in</a></li>
+      <li><a href="#content">Your entries belong to you</a></li>
+      <li><a href="#encryption">Encryption and data loss</a></li>
+      <li><a href="#backups">Backups and restore</a></li>
+      <li><a href="#premium">Premium subscriptions</a></li>
+      <li><a href="#ads">Ads and reward unlocks</a></li>
+      <li><a href="#library">Templates, fonts and stickers</a></li>
+      <li><a href="#use">Acceptable use</a></li>
+      <li><a href="#changes-app">Changes to the app</a></li>
+      <li><a href="#ending">Ending your use</a></li>
+      <li><a href="#warranty">Disclaimers</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#law">Governing law</a></li>
+      <li><a href="#changes-terms">Changes to these terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="accept">
+    <h2 class="rule"><span class="num">1</span> Accepting these terms</h2>
+    <p>
+      LifeSpace ("the app") is provided by Shankar Ghule, trading as Life Space
+      App, based in Pune, Maharashtra, India ("we", "us"). By installing or
+      using the app you agree to these terms. If you do not agree, please
+      uninstall the app.
+    </p>
+    <p>
+      These terms work alongside our
+      <a href="privacy-policy.html">Privacy Policy</a>, which describes what
+      data the app handles and what stays on your device.
+    </p>
+  </section>
+
+  <section id="who">
+    <h2 class="rule"><span class="num">2</span> Who may use LifeSpace</h2>
+    <p>
+      You must be at least 13 years old to use LifeSpace. If you are in the
+      European Economic Area or the United Kingdom, you must be at least 16, or
+      have permission from a parent or guardian.
+    </p>
+    <p>
+      You must also be able to form a binding contract where you live. If you
+      are using the app on behalf of someone else, you confirm you are allowed
+      to do so.
+    </p>
+  </section>
+
+  <section id="account">
+    <h2 class="rule"><span class="num">3</span> Accounts and sign-in</h2>
+    <p>
+      Most of LifeSpace works with no account at all. You can write, edit and
+      keep entries without ever signing in.
+    </p>
+    <p>
+      Signing in with Google is optional and is used for one thing: backing up
+      and restoring your diary through your own Google Drive. You are
+      responsible for keeping that Google account secure. If you sign in on a
+      shared device, anyone with access to it may reach the backups linked to
+      that account.
+    </p>
+  </section>
+
+  <section id="content">
+    <h2 class="rule"><span class="num">4</span> Your entries belong to you</h2>
+    <p>
+      Everything you write, photograph, record or design in LifeSpace is yours.
+      We claim no ownership of it, and we do not sell it, train on it, or share
+      it.
+    </p>
+    <p>
+      Your entries are stored encrypted on your device. We have no server-side
+      copy of them and no way to read them. The only copies that leave your
+      device are the backups you choose to make to your own Google Drive — see
+      <a href="#encryption">section 5</a> for how those are unlocked.
+    </p>
+    <p>
+      You are responsible for the content you create — including that you have
+      the right to use any photo, video or audio you add.
+    </p>
+  </section>
+
+  <section id="encryption">
+    <h2 class="rule"><span class="num">5</span> Encryption and data loss</h2>
+    <p>
+      LifeSpace encrypts your diary database and your media files on your
+      device. The key that unlocks them is generated on your device and held in
+      your device's secure storage. We never hold that key and it is never sent
+      to our servers.
+    </p>
+
+    <h3>Your key travels with your backup</h3>
+    <p>
+      If you turn on Google Drive backup, a copy of that key is stored in
+      <strong>your own Google Drive</strong>, in a private folder that only
+      LifeSpace can see. This is what makes a backup usable: without the key,
+      an encrypted backup could never be opened again, not even by you.
+    </p>
+    <p>
+      So the key goes to your Google account — not to us. You do not need to
+      write it down or keep it anywhere yourself.
+    </p>
+
+    <div class="callout">
+      <span class="label">What this means for recovery</span>
+      <p>
+        <strong>With a Drive backup:</strong> you can restore your diary on a
+        new device by signing in with the same Google account. Losing your
+        phone does not mean losing your entries.
+      </p>
+      <p style="margin-top:12px">
+        <strong>Without a backup:</strong> your entries exist only on that one
+        device. If you lose it, uninstall the app, clear its data or reset the
+        device, they are gone permanently. We hold no copy and there is no
+        support override that can bring them back.
+      </p>
+    </div>
+
+    <p>
+      Please turn on backup before you rely on LifeSpace for anything you would
+      be upset to lose.
+    </p>
+
+    <h3>Keep your Google account secure</h3>
+    <p>
+      Because your key is kept in your Google Drive, the safety of your backup
+      is the safety of that Google account. Anyone who gains access to it may
+      be able to restore your diary. We strongly recommend turning on two-step
+      verification for the account you back up to.
+    </p>
+
+    <h3>Your PIN is separate</h3>
+    <p>
+      The PIN and biometric lock protect the app on your device. Your PIN is
+      stored on that device only, as a one-way hash — it is never uploaded, we
+      never see it, and we cannot reset or recover it.
+    </p>
+    <p>
+      The PIN is not what encrypts your backup, so forgetting it does not
+      destroy your entries if you have a backup: reinstalling and restoring
+      lets you set a new one.
+    </p>
+  </section>
+
+  <section id="backups">
+    <h2 class="rule"><span class="num">6</span> Backups and restore</h2>
+    <p>
+      Backups are written to your own Google Drive, under your own account,
+      together with the key needed to open them
+      (<a href="#encryption">section 5</a>). We do not store them and cannot
+      access them. Their availability, storage limits and retention are
+      governed by Google's terms, not ours.
+    </p>
+    <p>
+      We do our best to make backup and restore reliable, but we cannot
+      guarantee that every backup will complete or that every restore will
+      succeed — for example if a backup was interrupted, if Drive storage is
+      full, or if a file was removed from Drive. Please verify that your
+      backups exist and check them from time to time.
+    </p>
+  </section>
+
+  <section id="premium">
+    <h2 class="rule"><span class="num">7</span> Premium subscriptions</h2>
+    <p>
+      LifeSpace offers optional paid subscriptions that unlock premium
+      templates, fonts, backgrounds, stickers and other features. Subscriptions
+      are sold and billed by Google Play, not directly by us.
+    </p>
+    <ul>
+      <li>
+        Subscriptions renew automatically at the interval shown at purchase
+        until you cancel.
+      </li>
+      <li>
+        You can cancel at any time from your Google Play account. Cancelling
+        stops the next renewal; it does not shorten the period you have already
+        paid for.
+      </li>
+      <li>
+        Refunds are handled by Google under Google Play's refund policy. We
+        cannot issue refunds for purchases made through Google Play.
+      </li>
+      <li>
+        Prices may change. Where a change affects a subscription you already
+        hold, Google will notify you and you may cancel before it takes effect.
+      </li>
+    </ul>
+    <p>
+      If your subscription ends, premium content becomes locked again. Entries
+      you already created with premium content are not deleted and remain
+      yours, though you may no longer be able to apply that content to new
+      entries.
+    </p>
+  </section>
+
+  <section id="ads">
+    <h2 class="rule"><span class="num">8</span> Ads and reward unlocks</h2>
+    <p>
+      LifeSpace may show advertising, and may offer optional rewarded ads that
+      unlock a premium item temporarily. Where an unlock is described as
+      lasting a set period, that period is what you receive — it is not a
+      permanent purchase.
+    </p>
+    <p>
+      Ads are supplied by third-party networks. We do not control which
+      individual adverts are shown. Our
+      <a href="privacy-policy.html">Privacy Policy</a> explains what those
+      networks receive and how to manage consent for personalised advertising.
+    </p>
+  </section>
+
+  <section id="library">
+    <h2 class="rule"><span class="num">9</span> Templates, fonts and stickers</h2>
+    <p>
+      The app includes designs, templates, fonts, backgrounds and stickers that
+      we or our licensors provide. You may use them inside LifeSpace to create
+      your own entries, and you may export and share what you create.
+    </p>
+    <p>
+      You may not extract, redistribute or resell that content on its own, or
+      use it outside the app as if it were yours. Fonts supplied through Google
+      Fonts remain subject to their own open-source licences.
+    </p>
+    <p>
+      We may add, change or withdraw templates and other content over time,
+      including content delivered to the app after installation.
+    </p>
+  </section>
+
+  <section id="use">
+    <h2 class="rule"><span class="num">10</span> Acceptable use</h2>
+    <p>Please do not:</p>
+    <ul>
+      <li>
+        Use LifeSpace to store or share material that is illegal where you
+        live, or that depicts the abuse or exploitation of children.
+      </li>
+      <li>
+        Attempt to break, bypass or reverse-engineer the app's encryption,
+        licence checks or subscription controls.
+      </li>
+      <li>
+        Interfere with our services, or with the services LifeSpace depends on.
+      </li>
+      <li>
+        Use the app to infringe someone else's copyright, privacy or other
+        rights.
+      </li>
+      <li>Resell or redistribute the app or its bundled content.</li>
+    </ul>
+    <p>
+      Because your entries are encrypted and we cannot read them, we do not
+      monitor what you write. Enforcement of this section is limited to what we
+      can actually see — for example, messages you send us through the help
+      centre, or reports we receive.
+    </p>
+  </section>
+
+  <section id="changes-app">
+    <h2 class="rule"><span class="num">11</span> Changes to the app</h2>
+    <p>
+      We update LifeSpace regularly. Features may be added, changed or removed,
+      and some features depend on services outside our control — Google Play,
+      Google Drive, and the services that deliver templates and configuration
+      to the app.
+    </p>
+    <p>
+      We may need to interrupt the app for maintenance, or discontinue it
+      entirely. If we discontinue it, we will give reasonable notice through the
+      app or the Play Store listing where we are able to, so that you can back
+      up your entries.
+    </p>
+  </section>
+
+  <section id="ending">
+    <h2 class="rule"><span class="num">12</span> Ending your use</h2>
+    <p>
+      You can stop using LifeSpace at any time by uninstalling it. Uninstalling
+      removes the app's local data from your device, including your encrypted
+      entries. Backups already in your Google Drive are not removed by
+      uninstalling; you can delete those from Drive yourself.
+    </p>
+    <p>
+      We may suspend or end your access to our services if you seriously or
+      repeatedly breach these terms — in particular section 10.
+    </p>
+  </section>
+
+  <section id="warranty">
+    <h2 class="rule"><span class="num">13</span> Disclaimers</h2>
+    <p>
+      LifeSpace is provided "as is" and "as available". To the fullest extent
+      permitted by law, we make no warranties that the app will be
+      uninterrupted, error-free, or that it will meet your particular
+      requirements.
+    </p>
+    <p>
+      In particular, and without limiting section 5: we do not warrant that
+      your entries, media or backups will always be preserved, recoverable or
+      free from corruption. <strong>Please keep your own backups of anything
+      you cannot afford to lose.</strong>
+    </p>
+    <p>
+      Nothing in these terms excludes any rights you have under consumer law
+      that cannot be excluded by agreement.
+    </p>
+  </section>
+
+  <section id="liability">
+    <h2 class="rule"><span class="num">14</span> Limitation of liability</h2>
+    <p>
+      To the fullest extent permitted by law, we are not liable for indirect or
+      consequential loss, loss of data, loss of profit, or loss of goodwill
+      arising from your use of LifeSpace.
+    </p>
+    <p>
+      Where liability cannot be excluded, our total liability to you is limited
+      to the greater of the amount you paid us for LifeSpace in the twelve
+      months before the claim, or INR 1,000.
+    </p>
+    <p>
+      Again, this does not limit liability that cannot be limited by law,
+      including for death or personal injury caused by negligence, or for
+      fraud.
+    </p>
+  </section>
+
+  <section id="law">
+    <h2 class="rule"><span class="num">15</span> Governing law</h2>
+    <p>
+      These terms are governed by the laws of India. The courts at Pune,
+      Maharashtra have exclusive jurisdiction over any dispute, except that if
+      you are a consumer resident elsewhere, you may also have the right to
+      bring proceedings in your own country of residence, and mandatory
+      consumer-protection rules there continue to apply to you.
+    </p>
+  </section>
+
+  <section id="changes-terms">
+    <h2 class="rule"><span class="num">16</span> Changes to these terms</h2>
+    <p>
+      We may update these terms as the app changes. The effective date at the
+      top of this page always shows the current version. When a change
+      materially affects your rights, we will give notice in the app or on the
+      Play Store listing before it takes effect.
+    </p>
+    <p>
+      Continuing to use LifeSpace after a change takes effect means you accept
+      the updated terms. If you do not accept them, please stop using the app.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2 class="rule"><span class="num">17</span> Contact</h2>
+    <p>
+      Questions about these terms, or about your account, are welcome. We aim
+      to reply within a few working days.
+    </p>
+  </section>
+
+  <footer>
+    <div class="contact">
+      <p><strong>Life Space App</strong></p>
+      <p>Shankar Ghule, Pune, Maharashtra, India</p>
+      <p>
+        <a href="mailto:lifespaceapp2026@gmail.com">lifespaceapp2026@gmail.com</a>
+      </p>
+    </div>
+    <p>
+      LifeSpace for Android &middot; Effective 29 August 2026 &middot;
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+</div>
